@@ -12,6 +12,8 @@ app = Flask(__name__)
 def welcome():
     return "Welcome to my Flash Cards application!"
 
+# Page the counts number of visits
+
 @app.route("/date")
 def date():
     return "This page was served at " + str(datetime.now())

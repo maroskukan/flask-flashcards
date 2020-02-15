@@ -2,7 +2,7 @@
 
 ## Packages
 
-Using python virtual environments is advise. Afterwards use pip to install dependencies.
+Using python virtual environments is advised. Afterwards use pip to install dependencies.
 
 ```
 pip install -r requiremnets.txt

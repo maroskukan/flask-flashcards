@@ -1,4 +1,4 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, jsonify
 
 from model import db
 
@@ -12,6 +12,7 @@ def welcome():
         "welcome.html",
         cards=db
     )
+
 @app.route("/card/<int:index>")
 def card_view(index):
     try:
@@ -24,3 +25,16 @@ def card_view(index):
         )
     except IndexError:
         abort(404)
+
+@app.route("/api/card/")
+def api_card_list():
+    return jsonify(db)
+
+
+@app.route("/api/card/<int:index>")
+def api_card_detail(index):
+    try:
+        return db[index]
+    except IndexError:
+        abort(404)
+

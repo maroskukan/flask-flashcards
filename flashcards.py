@@ -10,17 +10,17 @@ app = Flask(__name__) # Creates Flask object with name of the module
 def welcome():
     return render_template(
         "welcome.html",
-        message="Here's a message from the view."
+        cards=db
     )
-
-
 @app.route("/card/<int:index>")
 def card_view(index):
     try:
         card = db[index]
         return render_template(
             "card.html",
-            card=card
+            card=card,
+            index=index,
+	    max_index=len(db)-1
         )
     except IndexError:
         abort(404)

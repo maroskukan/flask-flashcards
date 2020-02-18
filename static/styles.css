@@ -1,3 +1,13 @@
+/* */
+body {
+        font-family: sans-serif;
+        color: black;
+        background-color: lightgray;
+}
+h1 {
+        color: blue;
+}   
+
 /* Button Styles */
 .blueButton {
 	box-shadow:inset 0px 1px 0px 0px #54a3f7;

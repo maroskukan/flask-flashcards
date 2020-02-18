@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome!</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+{% extends "base.html" %} 
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}   
     <h1>Welcome to my page!</h1>
     <p>
         This is the demo application for the course
@@ -24,5 +20,4 @@
             </li>
         {% endfor %}
      </ul>
-</body>
-</html>
+{% endblock %}

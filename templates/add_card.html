@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Card</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Add Card{% endblock %}
+
+{% block content %}
     <h1>Add a new card</h1>
     <form method="post">
         <p>
@@ -19,5 +15,4 @@
         </p>
         <button type="submit" class="blueButton">Create</button>
     </form>
-</body>
-</html>
+{% endblock %}

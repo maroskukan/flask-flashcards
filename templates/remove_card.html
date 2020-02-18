@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Remove Card</title>
+     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1>Remove Flash Card</h1>
+    Question: {{ card.question }} <br>
+    Answer:   {{ card.answer }}
+
+    <h2>Are you sure</h2>
+    <form method="post">
+        <button type="submit">
+            Yes
+        </button>
+    </form>
+    <form action={{ url_for('welcome') }}>
+        <button type="submit">
+            No
+        </button>
+    </form>
+</body>
+</html>

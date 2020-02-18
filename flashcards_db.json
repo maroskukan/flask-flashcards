@@ -1,18 +1,1 @@
-[
-  {
-    "question": "Hello (formal)",
-    "answer": "Dobry Den"
-  },
-  {
-    "question": "Goodbye (formal)",
-    "answer": "Dovidenia"
-  },
-  {
-    "question": "Hello (informal)",
-    "answer": "Ahoj"
-  },
-  {
-    "question": "Goodbye (informal)",
-    "answer": "Maj sa"
-  }
-]
+[{"question": "Hello (formal)", "answer": "Dobry Den"}, {"question": "Goodbye (formal)", "answer": "Dovidenia"}, {"question": "Hello (informal)", "answer": "Ahoj"}, {"question": "Dog", "answer": "Pes"}]

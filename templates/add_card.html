@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Card</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Add a new card</h1>
+    <form method="post">
+        <p>
+            Question:
+            <input type="text" name="question">
+        </p>
+        <p>
+            Answer:
+            <input type="text" name="answer">
+        </p>
+        <button type="submit" class="blueButton">Create</button>
+    </form>
+</body>
+</html>

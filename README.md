@@ -1,6 +1,8 @@
-# Dependencies 
+# Flask
 
-## Packages
+## Dependencies 
+
+### Packages
 
 Using python virtual environments is advised. Afterwards use pip to install dependencies.
 
@@ -8,31 +10,31 @@ Using python virtual environments is advised. Afterwards use pip to install depe
 pip install -r requiremnets.txt
 ```
 
-## Environment variables
+### Environment variables
 
 To successfully run a flask application, ensure that you set the following environment variables.
 
-### Linux
+#### Linux
 ```
 export FLASK_APP=flashcards.py
 export FLASK_ENV=development
 ```
 
-### Windows
+#### Windows
 ```
 set FLASK_APP=flashcards.py
 set FLASK_ENV=development
 ```
 
-# Running the application
+## Running the application
 Flask development server is useful during application development, but is not recommended for production deployment for scalability reasons.
 ```
 flask run
 ```
 
-# Deploying the application
+## Deploying the application
 
-## Self-hosted option
+### Self-hosted option
 The example below describes steps to deploy Flask application using gunicorn as python web server with nginx as reverse proxy on Ubuntu server.
 ```
 # Install required packages

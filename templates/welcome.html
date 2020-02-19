@@ -7,17 +7,17 @@
     <p>
         This is the demo application for the course
         <em>Getting Started with Flask</em>
-        on <a href="https://pluralsight.com">Pluralsight</a>
+        on <a target="_blank" rel="noopener noreferrer" href="https://pluralsight.com" class="redLink">Pluralsight</a>.
     </p>
-
+    <a href="{{ url_for('add_card') }}" class=blueButton>Add New Card</a>
     <h2>Flash Cards</h2>
-    <ul>
+    <ol>
         {% for card in cards %}
             <li>
-                <a href="{{ url_for('card_view', index=loop.index0) }}">
+                <a href="{{ url_for('card_view', index=loop.index0) }}" class="redLink">
                     {{ card.question }}
                 </a>
             </li>
         {% endfor %}
-     </ul>
+     </ol>
 {% endblock %}

@@ -1,13 +1,31 @@
-/* */
+/* Global Styles */
 body {
-        font-family: sans-serif;
-        color: black;
-        background-color: lightgray;
+        font-family: Arial;
+        color: #FFFFFF;
+        background-color: #282828;
 }
 h1 {
-        color: blue;
+        color: #0099ff;
 }   
 
+/* Link Styles */
+
+.redLink:link {
+        color: #FFFFFF;
+        text-decoration:none;
+}
+.redLink:visited {
+        color: #FFFFFF;
+        text-decoration:none;
+}
+.redLink:hover {
+        color: #F37575;
+        text-decoration:none;
+}
+.redLink:active {
+        color: #FFFFFF;
+        text-decoration: none;
+}
 /* Button Styles */
 .blueButton {
 	box-shadow:inset 0px 1px 0px 0px #54a3f7;
